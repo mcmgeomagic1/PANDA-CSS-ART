@@ -1,0 +1,152 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html, body {
+	height: 100vh;
+	width: 100%;
+	font-family: sans-serif;
+	font-size: 16px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.fundo{
+	background: #eaaf09;
+	width: 400px;
+	height: 400px;
+	border-radius: 30%;
+	position: relative;
+	box-shadow: 8px 8px 8px rgba(0,0,0,0.1),
+	            -8px -8px 8px rgba(255,255,255,.1);
+}
+
+/*---------PANDA--------*/
+
+.cabeca{
+	width: 400px;
+	height: 350px;
+	background: #fff;
+	border-radius: 45%;
+	position: absolute;
+	bottom: -4em;
+	left: -3em;
+	transform: rotate(15deg);
+	z-index: 1;
+}
+.orelha, .olhos {
+	position: absolute;
+	background: #000;
+}
+.orelha{	
+	width: 140px;
+	height: 120px;
+	border-radius: 45%;
+}
+.orelha__esquerda {
+	left: 1em;
+	top: 2.4em;
+	transform: rotate(-20deg);
+}
+.orelha__direita {
+	right: 0em;
+	top: 9em;
+	transform: rotate(70deg);
+}
+.olhos {
+	width: 120px;
+	height: 160px;	
+}
+.olhos__esquerda{
+	transform: rotate(26deg);
+	border-radius: 60%;
+	top: 4em;
+	left: 4em ;
+}
+.olhos__direita{
+	transform: rotate(-8deg);
+	border-radius: 60%;
+	top: 4em;
+	right: 4em;
+}
+
+.vista {
+	position: absolute;
+	background: #fff;
+	width: 30px;
+	height: 40px;
+	border-radius: 5em;
+}
+.olhos__esquerda .vista {
+	transform: rotate(-18deg);
+	right: 1em;
+	top: 3em;
+}
+.olhos__esquerda .vista:after {
+	content: "";
+	position: absolute;
+	background: #000;
+	width: 18px;
+	height: 20px;
+	border-radius: 50%;
+	top: .8em;
+	left: .6em;
+}
+.olhos__direita .vista {
+	transform: rotate(18deg);
+	left: 1em;
+	top: 3.6em;
+}
+.olhos__direita .vista:after {
+	content: "";
+	position: absolute;
+	background: #000;
+	width: 18px;
+	height: 20px;
+	border-radius: 50%;
+	top: .8em;
+	left: .3em;
+}
+.nariz {
+	width: 50px;
+	height: 50px;
+	background: #000;
+	position: absolute;
+	top: 13em;
+	left: 10.5em;
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 100%);
+	border-radius: 30%;
+	transform: rotate(140deg);
+}
+.boca{
+	position: absolute;
+	bottom: 2.4em;
+	left: 7em;
+	width: 160px;
+	height: 180px;
+	background: none;
+	border: 16px solid #000;
+	border-radius: 100%;
+    clip-path: circle(50% at 49% 0);
+    transform: rotate(186deg);
+}
+
+/*----------TITULO--------*/
+
+.titulo {
+	padding: 0 2em;
+}
+
+span {
+	font-size: 390%;
+}
+
+h1 {
+	font-size: 500%;
+}
+
+p{
+	opacity: .7;
+	margin-left: .3em;
+}
