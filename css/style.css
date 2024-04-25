@@ -12,6 +12,20 @@ html, body {
 	justify-content: center;
 	align-items: center;
 }
+
+a:link,
+a:visited  {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+nav a:hover,
+nav a:active{
+	cursor: pointer;
+	font-weight: bold;
+	color: blue;
+}
+
 .fundo{
 	background: #eaaf09;
 	width: 400px;
